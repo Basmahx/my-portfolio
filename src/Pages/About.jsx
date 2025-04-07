@@ -1,4 +1,5 @@
 // add a toggle
+// add languages and tools, software like blender..
 
 const About = () => {
   return (

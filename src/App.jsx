@@ -4,6 +4,7 @@ import LandingPage from "./Pages/Landing";
 import About from "./Pages/About";
 import ProjectPage from "./Pages/Project";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/project/:id" element={<ProjectPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
