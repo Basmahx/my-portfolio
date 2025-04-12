@@ -16,7 +16,7 @@ import React from "react";
 
 const ProjectCard = () => {
   return (
-    <div className="border border-gray-200 bg-white max-w-full rounded-lg shadow-md overflow-hidden">
+    <div>
       <div className="p-6">
         <div className="text-center mb-4">
           <h3 className="text-lg font-semibold text-gray-700">Kasa</h3>

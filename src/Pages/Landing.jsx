@@ -24,11 +24,16 @@ const LandingPage = () => {
           </a>
         </div>
       </section>
-
+      <div className="border border-gray-200 bg-white max-w-full rounded-lg shadow-md overflow-hidden"></div>
       {/* Project Section (appears after scrolling) */}
-      <section className="bg-gray-100 py-20">
-        <ProjectCard />
+      <section className="text-center my-12">
+        <div className="flex justify-center mb-1">
+          <div className="w-7 h-px bg-gray-900"></div>{" "}
+        </div>
+        <h2 className="text-2xl font-semibold">Projects</h2>
       </section>
+
+      <ProjectCard />
     </div>
   );
 };

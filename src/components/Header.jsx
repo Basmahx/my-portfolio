@@ -16,7 +16,7 @@ const Header = () => (
             </a>
           </li>
           <li>
-            <a href="#about" className="hover:opacity-80 transition-opacity">
+            <a href="About" className="hover:opacity-80 transition-opacity">
               About
             </a>
           </li>
