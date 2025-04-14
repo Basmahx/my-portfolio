@@ -1,32 +1,24 @@
 [
   {
-    "id": 1,
+    "id": "ohmyfood",
     "name": "Ohmyfood",
-    "title": "",
-    "image": ""
+    "title": "Restauration interactive innovante",
+    "image": "/assets/projects/ohmyfood.png"
   },
   {
-    "id": 2,
+    "id": "ninacarducci",
     "name": "Ninacarducci",
-    "title": "",
-    "image": ""
+    "title": "Portfolio photographe pro",
+    "image": "/assets/projects/ninacarducci.png"
   },
   {
-    "id": 3,
+    "id": "kasa",
     "name": "Kasa",
-    "title": "",
-    "image": ""
+    "title": "Leader location entre particuliers"
   },
   {
-    "id": 4,
+    "id": "argentBank",
     "name": "ArgentBank",
-    "title": "",
-    "image": ""
-  },
-  {
-    "id": 5,
-    "name": "",
-    "title": "",
-    "image": ""
+    "title": "Banque numérique"
   }
 ]

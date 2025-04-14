@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@keyframes gradientAnimation {
+/* @keyframes gradientAnimation {
   0% {
     background-position: 0% 0%;
   }
@@ -12,7 +12,7 @@
 .animate-gradient {
   background-size: 400% 400%;
   animation: gradientAnimation 3s ease-in-out infinite;
-}
+} */
 
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

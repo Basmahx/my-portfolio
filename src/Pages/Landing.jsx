@@ -26,11 +26,11 @@ const LandingPage = () => {
       </section>
       <div className="border border-gray-200 bg-white max-w-full rounded-lg shadow-md overflow-hidden"></div>
       {/* Project Section (appears after scrolling) */}
-      <section className="text-center my-12">
+      <section className="text-center my-12 pt-16">
         <div className="flex justify-center mb-1">
-          <div className="w-7 h-px bg-gray-900"></div>{" "}
+          <div className="w-7 h-0.5 bg-gray-900"></div>{" "}
         </div>
-        <h2 className="text-2xl font-semibold">Projects</h2>
+        <h2 className="text-3xl font-bold uppercase">Projets</h2>
       </section>
 
       <ProjectCard />

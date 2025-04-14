@@ -1,16 +1,19 @@
 [
   {
-    "id": 1,
+    "id": "ohmyfood",
     "name": "Ohmyfood",
+    "title": "Restauration interactive innovante",
     "description": "Un site mobile-first pour une startup, permettant aux clients de restaurants gastronomiques de précommander leur menu en ligne. Ce service vise à réduire les temps d’attente et à optimiser l’expérience client.",
     "work": "J'ai intégré une maquette mobile-first, en assurant la réactivité et l'accessibilité de l'interface sur tous les types d'écrans. Je me suis concentré sur l'offre d'une expérience utilisateur fluide, en appliquant les meilleures pratiques en matière de design responsive. De plus, j'ai implémenté des animations CSS avec Sass, créant des transitions fluides et des éléments interactifs qui ont renforcé l'attrait visuel et l'engagement. En optimisant soigneusement l'interface, j'ai amélioré l'utilisabilité, garantissant une expérience dynamique et facile à utiliser.",
     "role": "",
     "tools": ["Html5", "CSS", "SASS", "Git", "Github"],
-    "githubLink": "https://github.com/Basmahx/Ohmyfood"
+    "githubLink": "https://github.com/Basmahx/Ohmyfood",
+    "image": "/assets/projects/ohmyfood.png"
   },
   {
-    "id": 2,
+    "id": "ninacarducci",
     "name": "Ninacarducci",
+    "title": "Portfolio photographe pro",
     "description": "Un site portfolio en ligne pour la photographe professionnelle Nina Carducci, cherchant à accroître sa visibilité et attirer de nouveaux clients.",
     "work": "Le site souffrait de lenteurs de chargement. J'ai analysé et optimisé le code afin d'améliorer ses performances, avec pour objectif d'accélérer le temps de chargement, d'améliorer la structure du code et d'optimiser le référencement. Cela a impliqué la minification des fichiers CSS et JavaScript, l'implémentation du chargement paresseux des images (lazy loading) et leur optimisation. Ces modifications ont permis de rendre l'interface plus fluide et agréable pour les utilisateurs. De plus, j'ai mis en place un référencement local en ajoutant des informations précises pour améliorer la visibilité du site sur les moteurs de recherche.",
     "role": "",
@@ -23,11 +26,13 @@
       "Git",
       "Github"
     ],
-    "githubLink": "https://github.com/Basmahx/ninacarducci.github.io"
+    "githubLink": "https://github.com/Basmahx/ninacarducci.github.io",
+    "image": "/assets/projects/ninacarducci.png"
   },
   {
-    "id": 3,
+    "id": "kasa",
     "name": "Kasa",
+    "title": "Leader location entre particuliers",
     "description": "",
     "work": "",
     "role": "",
@@ -35,8 +40,9 @@
     "githubLink": "https://github.com/Basmahx/kasa_application_web"
   },
   {
-    "id": 4,
+    "id": "argentBank",
     "name": "ArgentBank",
+    "title": "Banque numérique",
     "description": "",
     "work": "",
     "role": "",
@@ -45,21 +51,5 @@
       "https://github.com/Basmahx/ArgentBank-Frontend",
       "https://github.com/Basmahx/ArgentBank-Backend"
     ]
-  },
-  {
-    "id": 5,
-    "name": "",
-    "description": "",
-    "role": "",
-    "tools": ["", "", ""],
-    "githubLink": "https://github.com/"
-  },
-  {
-    "id": 6,
-    "name": "",
-    "description": "",
-    "role": "",
-    "tools": ["", "", ""],
-    "githubLink": "https://github.com/"
   }
 ]
