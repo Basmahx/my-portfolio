@@ -6,7 +6,13 @@
     "description": "Un site mobile-first pour une startup, permettant aux clients de restaurants gastronomiques de précommander leur menu en ligne. Ce service vise à réduire les temps d’attente et à optimiser l’expérience client.",
     "work": "J'ai intégré une maquette mobile-first, en assurant la réactivité et l'accessibilité de l'interface sur tous les types d'écrans. Je me suis concentré sur l'offre d'une expérience utilisateur fluide, en appliquant les meilleures pratiques en matière de design responsive. De plus, j'ai implémenté des animations CSS avec Sass, créant des transitions fluides et des éléments interactifs qui ont renforcé l'attrait visuel et l'engagement. En optimisant soigneusement l'interface, j'ai amélioré l'utilisabilité, garantissant une expérience dynamique et facile à utiliser.",
     "role": "",
-    "tools": ["Html5", "CSS", "SASS", "Git", "Github"],
+    "tools": [
+      { "name": "Html5", "icon": "FaHtml5" },
+      { "name": "CSS", "icon": "FaCss3Alt" },
+      { "name": "SASS", "icon": "FaSass" },
+      { "name": "Git", "icon": "FaGitAlt" },
+      { "name": "Github", "icon": "FaGithub" }
+    ],
     "githubLink": "https://github.com/Basmahx/Ohmyfood",
     "image": "/assets/projects/ohmyfood.png"
   },
@@ -18,13 +24,13 @@
     "work": "Le site souffrait de lenteurs de chargement. J'ai analysé et optimisé le code afin d'améliorer ses performances, avec pour objectif d'accélérer le temps de chargement, d'améliorer la structure du code et d'optimiser le référencement. Cela a impliqué la minification des fichiers CSS et JavaScript, l'implémentation du chargement paresseux des images (lazy loading) et leur optimisation. Ces modifications ont permis de rendre l'interface plus fluide et agréable pour les utilisateurs. De plus, j'ai mis en place un référencement local en ajoutant des informations précises pour améliorer la visibilité du site sur les moteurs de recherche.",
     "role": "",
     "tools": [
-      "Html5",
-      "CSS",
-      "JavaScript",
-      "Lighthouse",
-      "Wave",
-      "Git",
-      "Github"
+      { "name": "Html5", "icon": "FaHtml5" },
+      { "name": "CSS", "icon": "FaCss3Alt" },
+      { "name": "JavaScript", "icon": "FaJsSquare" },
+      { "name": "Git", "icon": "FaGitAlt" },
+      { "name": "Github", "icon": "FaGithub" },
+      { "name": "Lighthouse" },
+      { "name": "Wave" }
     ],
     "githubLink": "https://github.com/Basmahx/ninacarducci.github.io",
     "image": "/assets/projects/ninacarducci.png"
@@ -36,7 +42,14 @@
     "description": "",
     "work": "",
     "role": "",
-    "tools": ["Html", "CSS", "React", "Node.js", "Git", "Github"],
+    "tools": [
+      { "name": "Html", "icon": "FaHtml5" },
+      { "name": "CSS", "icon": "FaCss3Alt" },
+      { "name": "React", "icon": "FaReact" },
+      { "name": "Node.js", "icon": "FaNodeJs" },
+      { "name": "Git", "icon": "FaGitAlt" },
+      { "name": "Github", "icon": "FaGithub" }
+    ],
     "githubLink": "https://github.com/Basmahx/kasa_application_web"
   },
   {
@@ -46,7 +59,15 @@
     "description": "",
     "work": "",
     "role": "",
-    "tools": ["Html5", "CSS", "React", "Redux", "Vite", "Git", "Github"],
+    "tools": [
+      { "name": "Html5", "icon": "FaHtml5" },
+      { "name": "CSS", "icon": "FaCss3Alt" },
+      { "name": "React", "icon": "FaReact" },
+      { "name": "Redux", "icon": "FaJsSquare" },
+      { "name": "Git", "icon": "FaGitAlt" },
+      { "name": "Github", "icon": "FaGithub" },
+      { "name": "Vite" }
+    ],
     "githubLink": [
       "https://github.com/Basmahx/ArgentBank-Frontend",
       "https://github.com/Basmahx/ArgentBank-Backend"

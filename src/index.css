@@ -28,3 +28,12 @@ h5,
 h6 {
   color: #3f3f3f;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

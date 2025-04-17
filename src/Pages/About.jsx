@@ -15,9 +15,9 @@ const ToggleSection = ({ title, children }) => {
       <div
         className={`transition-all duration-500 ease-in-out overflow-hidden`}
         style={{
-          maxHeight: isOpen ? "1000px" : "0", // Transition height (open/close)
-          opacity: isOpen ? "1" : "0", // Fade-in/fade-out effect (optional)
-          marginTop: isOpen ? "1rem" : "0", // Optional: gives space above when opened
+          maxHeight: isOpen ? "1000px" : "0",
+          opacity: isOpen ? "1" : "0",
+          marginTop: isOpen ? "1rem" : "0",
         }}>
         {/* Only render children when open */}
         {isOpen && <div>{children}</div>}
@@ -32,7 +32,9 @@ const About = () => {
       <div className="flex flex-col items-center justify-start p-2 pt-62">
         <section className="w-full max-w-4xl ">
           <div className="w-full text-left pb-12 ">
-            <h1 className="text-3xl font-bold mb-6">Basmah Alzenbake</h1>
+            <h1 className="text-3xl font-bold uppercase  tracking-widetext-gray-500 mb-6">
+              Basmah Alzenbake ⟢
+            </h1>
           </div>
           {/* Journey Section */}
           <ToggleSection title="Mon Parcours">
