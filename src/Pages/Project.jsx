@@ -14,6 +14,7 @@ const ProjectPage = () => {
   });
 
   useEffect(() => {
+    window.scrollTo(0, 0); // scroll to top when component mounts
     const fetchProjectData = async () => {
       try {
         const response = await fetch(`/projects.json`);
@@ -53,7 +54,7 @@ const ProjectPage = () => {
   return (
     <div className="project-page pt-16 min-h-[80vh] flex-grow flex-col">
       {/* Top Section with light gray background */}
-      <div className="w-screen h-[50vh] bg-gray-100 flex items-center justify-center">
+      <div className="w-screen h-[50vh] bg-gray-50 flex items-center justify-center">
         <img
           src={project.image}
           alt={project.name}
@@ -62,7 +63,7 @@ const ProjectPage = () => {
       </div>
       <div className="px-4 sm:px-6 lg:px-16 pt-16 pb-16 space-y-12 max-w-6xl mx-auto">
         <div className="text-left space-y-4">
-          <p className="text-gray-500 text-sm sm:text-base font-medium uppercase tracking-wide">
+          <p className="text-gray-500 text-sm sm:text-base font-bold uppercase tracking-wide">
             {project.name}
           </p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl uppercase pb-4 font-medium text-gray-800">

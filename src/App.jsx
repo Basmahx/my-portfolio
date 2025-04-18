@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LandingPage from "./Pages/Landing";
+import Home from "./main/Home";
 import About from "./Pages/About";
 import ProjectPage from "./Pages/Project";
 import Header from "./components/Header";
@@ -12,7 +12,7 @@ const App = () => {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects/:id" element={<ProjectPage />} />
         </Routes>

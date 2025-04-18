@@ -1,4 +1,4 @@
-import logo from "/assets/logo.webp";
+import logo from "/assets/logo.svg";
 
 const Header = () => (
   <header className="fixed top-0 left-1/2 -translate-x-1/2 w-full z-50">

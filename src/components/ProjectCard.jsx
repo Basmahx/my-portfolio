@@ -19,15 +19,15 @@ const ProjectCard = () => {
           to={`/projects/${project.id}`}
           className="bg-white rounded-2xl shadow-lg overflow-hidden w-full max-w-5xl cursor-pointer transform transition-transform hover:scale-105 hover:shadow-xl mb-32">
           <div className="p-10">
-            <h3 className="text-center pb-4 text-gray-500 text-sm sm:text-base font-medium uppercase tracking-wide">
+            <p className="text-center pb-4 text-gray-400 text-sm sm:text-base font-bold uppercase tracking-wide">
               {project.name}
-            </h3>
-            <p className="text-center text-4xl font-bold text-gray-800 mb-8">
+            </p>
+            <p className="text-center text-2xl  font-medium uppercase text-gray-800 mb-8">
               {project.title || " "}
             </p>
           </div>
 
-          <div className="bg-gray-100 flex justify-center items-start h-[600px] p-6">
+          <div className="bg-gray-50 flex justify-center items-start h-[600px] p-6">
             <img
               src={project.image} // Directly use the image path from JSON
               alt={`${project.name} Preview`}
