@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.webp";
+import logo from "/assets/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -7,7 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-white border-t border-gray-200">
+    <div className="w-full bg-white border-t border-gray-200 ">
       <div className="flex justify-between items-center py-4 px-8">
         {/* Left Section (Logo) */}
         <div className="flex items-center justify-center flex-1">
@@ -56,15 +56,13 @@ const Footer = () => {
         {/* Divider between the sections */}
         <div className="h-8 border-l border-gray-200"></div>
 
-        <div className="flex flex-col items-center justify-center flex-1 space-y-2">
-          <p className="text-sm font-medium text-gray-700">
+        <div className="flex flex-col items-center justify-center flex-1 space-y-2 pl-5">
+          <p className="text-sm  text-gray-700 flex  items-center space-x-1 ">
             © 2025 Basmah Alzenbake. All Rights Reserved.
           </p>
 
-          <p className="text-sm font-medium text-gray-700 flex items-center space-x-1">
-            <span>Made with</span>
-            <span>🩶</span>
-            <span>and caramel macchiato</span>
+          <p className="text-sm  text-gray-500 flex items-center space-x-1">
+            Made with ♡ and caramel macchiato
           </p>
         </div>
       </div>

@@ -1,46 +1,41 @@
-// const ProjectCard = ({ title, description, link }) => {
-//   return (
-//     <a href={link} target="_blank" rel="noopener noreferrer" className="block">
-//       <div className="border rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all cursor-pointer bg-white">
-//         <h2 className="text-xl font-bold">{title}</h2>
-//         <p className="text-gray-600">{description}</p>
-//       </div>
-//     </a>
-//   );
-// };
-
-// export default ProjectCard;
-
-// will be mapping over a json file, this is just a prototype
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ProjectCard = () => {
-  return (
-    <div className="border border-gray-200 bg-white max-w-full rounded-lg shadow-md overflow-hidden">
-      <div className="p-6">
-        <div className="text-center mb-4">
-          <h3 className="text-lg font-semibold text-gray-700">Kasa</h3>
-        </div>
-        <div className="text-center mb-6">
-          <p className="text-2xl font-bold text-gray-800">
-            descriptive title here
-          </p>
-        </div>
-        <div className="flex justify-center space-x-4 mb-6">
-          <span className="bg-gray-100 text-gray-700 text-xs font-medium py-2 px-4 rounded-full">
-            key words maybe?
-          </span>
-        </div>
+  const [projects, setProjects] = useState([]);
 
-        <div className="text-center"></div>
-      </div>
-      <div className="relative block w-full h-64">
-        {/* <img
-          src=""
-          alt="Project Preview"
-          className="absolute inset-0 w-full h-full object-contain rounded-lg"
-        /> */}
-      </div>
+  useEffect(() => {
+    fetch("/projectCard.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data))
+      .catch((err) => console.error("Error fetching projects:", err));
+  }, []);
+
+  return (
+    <div className="min-h-screen flex flex-col  items-center justify-center bg-white p-10 space-y-10">
+      {projects.map((project) => (
+        <Link
+          key={project.id}
+          to={`/projects/${project.id}`}
+          className="bg-white rounded-2xl shadow-lg overflow-hidden w-full max-w-5xl cursor-pointer transform transition-transform hover:scale-105 hover:shadow-xl mb-32">
+          <div className="p-10">
+            <p className="text-center pb-4 text-gray-400 text-sm sm:text-base font-bold uppercase tracking-wide">
+              {project.name}
+            </p>
+            <p className="text-center text-2xl  font-medium uppercase text-gray-800 mb-8">
+              {project.title || " "}
+            </p>
+          </div>
+
+          <div className="bg-gray-50 flex justify-center items-start h-[600px] p-6">
+            <img
+              src={project.image} // Directly use the image path from JSON
+              alt={`${project.name} Preview`}
+              className="max-h-full object-contain rounded-lg shadow-lg"
+            />
+          </div>
+        </Link>
+      ))}
     </div>
   );
 };

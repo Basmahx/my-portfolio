@@ -1,4 +1,4 @@
-import logo from "../assets/logo.webp";
+import logo from "/assets/logo.svg";
 
 const Header = () => (
   <header className="fixed top-0 left-1/2 -translate-x-1/2 w-full z-50">
@@ -12,12 +12,12 @@ const Header = () => (
         <ul className="flex gap-6 text-gray-700 text-sm font-medium">
           <li>
             <a href="#projects" className="hover:opacity-80 transition-opacity">
-              Projects
+              Projets
             </a>
           </li>
           <li>
-            <a href="#about" className="hover:opacity-80 transition-opacity">
-              About
+            <a href="About" className="hover:opacity-80 transition-opacity">
+              À propos
             </a>
           </li>
           <li>
