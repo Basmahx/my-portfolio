@@ -29,7 +29,7 @@ const ToggleSection = ({ title, children }) => {
 const About = () => {
   return (
     <div className=" p-12 flex-grow">
-      <div className="flex flex-col items-center justify-start p-2 pt-62">
+      <div className=" opacity-0 animate-[fadeIn_1s_ease-in_forwards] flex flex-col items-center justify-start p-2 pt-62">
         <section className="w-full max-w-4xl ">
           <div className="w-full text-left pb-12 ">
             <h1 className="text-3xl font-bold uppercase  tracking-widetext-gray-500 mb-6">
@@ -59,9 +59,11 @@ const About = () => {
           <div className="w-full h-px bg-gray-300 mb-6"></div>
 
           {/* Hobbies Section */}
-          <ToggleSection title="Personal Interests">
+          <ToggleSection title="Centres d'intérêt personnels">
             <p className="text-[rgb(97,97,97)]">
-              Your hobbies, side projects, or passions outside of your work...
+              J'adore travailler sur des projets créatifs, que ce soit le
+              dessin, la conception ou la création d'animations. Je travaille
+              actuellement sur mon premier short film animé.
             </p>
           </ToggleSection>
 
@@ -75,8 +77,8 @@ const About = () => {
                 <span className="absolute left-0 top-0 text-[rgb(97,97,97)]">
                   &#8226;
                 </span>
-                Développement web : HTML, CSS, JavaScript, React, Node.js, et
-                plus
+                Gestion de projet : Notion, pour organiser et rationaliser les
+                flux de travail
               </li>
               <li className="relative pl-6">
                 <span className="absolute left-0 top-0 text-[rgb(97,97,97)]">
@@ -96,8 +98,8 @@ const About = () => {
                 <span className="absolute left-0 top-0 text-[rgb(97,97,97)]">
                   &#8226;
                 </span>
-                Gestion de projet : Notion, pour organiser et rationaliser les
-                flux de travail
+                Développement web : HTML, CSS, TailwindCSS, SASS, JavaScript,
+                React, Redux, Node.js, Vite.
               </li>
             </ul>
           </ToggleSection>

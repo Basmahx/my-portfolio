@@ -56,12 +56,12 @@ const Footer = () => {
         {/* Divider between the sections */}
         <div className="h-8 border-l border-gray-200"></div>
 
-        <div className="flex flex-col items-center justify-center flex-1 space-y-2 pl-5">
-          <p className="text-sm  text-gray-700 flex  items-center space-x-1 ">
+        <div className="flex flex-col  justify-center flex-1 space-y-2 pl-5">
+          <p className="text-sm  text-gray-700 flex   space-x-1 ">
             © 2025 Basmah Alzenbake. All Rights Reserved.
           </p>
 
-          <p className="text-sm  text-gray-500 flex items-center space-x-1">
+          <p className="text-sm  text-gray-500 flex  space-x-1">
             Made with ♡ and caramel macchiato
           </p>
         </div>

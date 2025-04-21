@@ -3,9 +3,9 @@
     "id": "ohmyfood",
     "name": "Ohmyfood",
     "title": "Restauration interactive innovante",
-    "description": "Un site mobile-first pour une startup, permettant aux clients de restaurants gastronomiques de précommander leur menu en ligne. Ce service vise à réduire les temps d’attente et à optimiser l’expérience client.",
+    "description": "Ohmyfood est un site mobile-first pour une startup, permettant aux clients de restaurants gastronomiques de précommander leur menu en ligne. Ce service vise à réduire les temps d’attente et à optimiser l’expérience client.",
     "work": "J'ai intégré une maquette mobile-first, en assurant la réactivité et l'accessibilité de l'interface sur tous les types d'écrans. Je me suis concentré sur l'offre d'une expérience utilisateur fluide, en appliquant les meilleures pratiques en matière de design responsive. De plus, j'ai implémenté des animations CSS avec Sass, créant des transitions fluides et des éléments interactifs qui ont renforcé l'attrait visuel et l'engagement. En optimisant soigneusement l'interface, j'ai amélioré l'utilisabilité, garantissant une expérience dynamique et facile à utiliser.",
-    "role": "",
+    "role": "Développeur front-end",
     "tools": [
       { "name": "Html5", "icon": "FaHtml5" },
       { "name": "CSS", "icon": "FaCss3Alt" },
@@ -14,15 +14,15 @@
       { "name": "Github", "icon": "FaGithub" }
     ],
     "githubLink": "https://github.com/Basmahx/Ohmyfood",
-    "image": "/assets/projects/ohmyfood.png"
+    "image": "/assets/projects/ohmyfood.webp"
   },
   {
     "id": "sophiebluel",
     "name": "Sophie Bluel",
-    "title": "Restauration interactive innovante",
-    "description": "Un site mobile-first pour une startup, permettant aux clients de restaurants gastronomiques de précommander leur menu en ligne. Ce service vise à réduire les temps d’attente et à optimiser l’expérience client.",
-    "work": "J'ai intégré une maquette mobile-first, en assurant la réactivité et l'accessibilité de l'interface sur tous les types d'écrans. Je me suis concentré sur l'offre d'une expérience utilisateur fluide, en appliquant les meilleures pratiques en matière de design responsive. De plus, j'ai implémenté des animations CSS avec Sass, créant des transitions fluides et des éléments interactifs qui ont renforcé l'attrait visuel et l'engagement. En optimisant soigneusement l'interface, j'ai amélioré l'utilisabilité, garantissant une expérience dynamique et facile à utiliser.",
-    "role": "",
+    "title": "Portfolio d’architecte d’intérieur",
+    "description": "",
+    "work": "j’ai développé une page de connexion dédiée à l’administrateur ainsi qu’une modale permettant l’ajout de nouveaux médias. J’ai également mis en place une galerie dynamique dont les éléments sont récupérés via des appels API en JavaScript, le tout en respectant la maquette fournie sur Figma.",
+    "role": "Développeur front-end",
     "tools": [
       { "name": "Html5", "icon": "FaHtml5" },
       { "name": "CSS", "icon": "FaCss3Alt" },
@@ -31,7 +31,7 @@
       { "name": "Github", "icon": "FaGithub" }
     ],
     "githubLink": "https://github.com/Basmahx/Ohmyfood",
-    "image": "/assets/projects/sophie.png"
+    "image": "/assets/projects/sophie.webp"
   },
   {
     "id": "ninacarducci",
@@ -50,15 +50,15 @@
       { "name": "Wave" }
     ],
     "githubLink": "https://github.com/Basmahx/ninacarducci.github.io",
-    "image": "/assets/projects/ninacarducci.png"
+    "image": "/assets/projects/ninacarducci.webp"
   },
   {
     "id": "kasa",
     "name": "Kasa",
     "title": "Leader location entre particuliers",
-    "description": "",
-    "work": "",
-    "role": "",
+    "description": "Kasa est une entreprise spécialisée dans la location d’appartements entre particuliers. Elle figure parmi les leaders du marché en France, avec plus de 500 nouvelles annonces publiées chaque jour.",
+    "work": "J'ai travaillé sur la logique de présentation des données en utilisant des composants React pour structurer l'application, tout en respectant la maquette fournie sur Figma. Grâce à React Router, j'ai configuré la navigation entre les différentes pages, permettant aux utilisateurs de naviguer facilement sur le site. J’ai également utilisé Node.js pour exécuter du code JavaScript côté serveur, ce qui a permis de gérer les requêtes et d’interagir avec la base de données.",
+    "role": "Développeur front-end",
     "tools": [
       { "name": "Html", "icon": "FaHtml5" },
       { "name": "CSS", "icon": "FaCss3Alt" },
@@ -67,15 +67,16 @@
       { "name": "Git", "icon": "FaGitAlt" },
       { "name": "Github", "icon": "FaGithub" }
     ],
-    "githubLink": "https://github.com/Basmahx/kasa_application_web"
+    "githubLink": "https://github.com/Basmahx/kasa_application_web",
+    "image": "/assets/projects/kasa.webp"
   },
   {
     "id": "argentBank",
     "name": "ArgentBank",
     "title": "Banque numérique",
-    "description": "",
-    "work": "",
-    "role": "",
+    "description": "Argent Bank est une nouvelle banque en ligne qui souhaite percer dans le secteur bancaire.",
+    "work": "J'ai travaillé sur la logique de présentation des données en utilisant des composants React pour structurer l'application, tout en respectant la maquette fournie sur Figma. Grâce à React Router, j'ai configuré la navigation entre les différentes pages, permettant aux utilisateurs de naviguer facilement sur le site. J’ai également utilisé Node.js pour exécuter du code JavaScript côté serveur, ce qui a permis de gérer les requêtes et d’interagir avec la base de données.",
+    "role": "Développeur front-end",
     "tools": [
       { "name": "Html5", "icon": "FaHtml5" },
       { "name": "CSS", "icon": "FaCss3Alt" },
@@ -88,6 +89,7 @@
     "githubLink": [
       "https://github.com/Basmahx/ArgentBank-Frontend",
       "https://github.com/Basmahx/ArgentBank-Backend"
-    ]
+    ],
+    "image": "/assets/projects/Argentbank.webp"
   }
 ]

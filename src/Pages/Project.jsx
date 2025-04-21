@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ToolIcon from "../components/ToolIcon"; // Import the icon map
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectPage = () => {
   const { id } = useParams();
@@ -28,7 +30,7 @@ const ProjectPage = () => {
         } else {
           setProject({
             name: "Project not found",
-            description: "No description available.",
+            description: "",
             work: "",
             role: "",
             tools: [],
@@ -51,10 +53,15 @@ const ProjectPage = () => {
     );
   }
 
+  const githubLinks = Array.isArray(project.githubLink)
+    ? project.githubLink
+    : project.githubLink
+    ? [project.githubLink]
+    : [];
   return (
     <div className="project-page pt-16 min-h-[80vh] flex-grow flex-col">
       {/* Top Section with light gray background */}
-      <div className="w-screen h-[50vh] bg-gray-50 flex items-center justify-center">
+      <div className="w-screen h-[70vh] bg-gray-50 flex items-center justify-center">
         <img
           src={project.image}
           alt={project.name}
@@ -63,19 +70,38 @@ const ProjectPage = () => {
       </div>
       <div className="px-4 sm:px-6 lg:px-16 pt-16 pb-16 space-y-12 max-w-6xl mx-auto">
         <div className="text-left space-y-4">
-          <p className="text-gray-500 text-sm sm:text-base font-bold uppercase tracking-wide">
-            {project.name}
-          </p>
+          <div className="flex justify-between items-center">
+            <p className="text-gray-500 text-sm sm:text-base font-bold uppercase tracking-wide">
+              {project.name}
+            </p>
+
+            {/* Render GitHub links */}
+            {githubLinks.length > 0 ? (
+              githubLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 text-gray-700 hover:text-gray-900">
+                  <FontAwesomeIcon icon={faGithub} size="2x" />
+                </a>
+              ))
+            ) : (
+              <span>No GitHub link available.</span>
+            )}
+          </div>
+
           <h1 className="text-2xl sm:text-3xl md:text-4xl uppercase pb-4 font-medium text-gray-800">
             {project.title || "title not available."}
           </h1>
           <p className="text-gray-700 text-base sm:text-lg pb-4 leading-relaxed">
-            {project.description || "No work description available."}
+            {project.description || ""}
           </p>
 
           <section className="space-y-6">
             <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
-              What I Did
+              Ce que j'ai réalisé:
             </h2>
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
               {project.work || "No work description available."}
@@ -90,7 +116,6 @@ const ProjectPage = () => {
                 </h3>
                 <div className="flex flex-wrap gap-4">
                   <ul className="list-disc pl-5 space-y-2">
-                    {" "}
                     {/* Add ul element with appropriate styling */}
                     {project.tools.map((tool, index) => (
                       <li key={index} className="flex items-center space-x-2">
@@ -99,6 +124,15 @@ const ProjectPage = () => {
                     ))}
                   </ul>
                 </div>
+              </div>
+
+              <div className="sm:col-span-1 space-y-2">
+                <h3 className="text-lg font-semibold text-gray-800 border-l-4 pl-3 border-gray-300">
+                  Rôle
+                </h3>
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed pl-4">
+                  {project.role || "No work description available."}
+                </p>
               </div>
             </div>
           </section>

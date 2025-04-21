@@ -5,8 +5,10 @@
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  width: 700px;
-  height: 700px;
+  width: 70vw;
+  height: 70vw;
+  max-width: 500px;
+  max-height: 500px;
   z-index: 0;
   background: radial-gradient(
     circle at center,
@@ -19,7 +21,7 @@
   background-size: 200% 200%;
   animation: rainbowMove 6s ease-in-out infinite;
   filter: blur(80px);
-  opacity: 0.65;
+  opacity: 0.8;
   border-radius: 50%;
   pointer-events: none;
 }
@@ -35,16 +37,6 @@
     background-position: 0% 0%;
   }
 }
-
-/* @keyframes rainbowPulse {
-  0%,
-  100% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 1;
-  }
-} */
 
 h1,
 h2,
