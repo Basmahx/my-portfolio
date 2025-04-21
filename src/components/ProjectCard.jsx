@@ -17,7 +17,7 @@ const ProjectCard = () => {
         <Link
           key={project.id}
           to={`/projects/${project.id}`}
-          className="bg-white rounded-2xl shadow-lg overflow-hidden w-full max-w-5xl cursor-pointer transform transition-transform hover:scale-105 hover:shadow-xl mb-32">
+          className="bg-white rounded-2xl border border-gray-200 overflow-hidden w-full max-w-4xl cursor-pointer transform transition-transform hover:scale-105  mb-32">
           <div className="p-10">
             <p className="text-center pb-4 text-gray-400 text-sm sm:text-base font-bold uppercase tracking-wide">
               {project.name}
@@ -29,7 +29,7 @@ const ProjectCard = () => {
 
           <div className="bg-gray-50 flex justify-center items-start h-[600px] p-6">
             <img
-              src={project.image} // Directly use the image path from JSON
+              src={project.image}
               alt={`${project.name} Preview`}
               className="max-h-full object-contain rounded-lg shadow-lg"
             />

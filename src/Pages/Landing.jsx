@@ -12,13 +12,13 @@ const LandingPage = () => {
         {/* Outer container for content + absolutely positioned link */}
         <div className="relative max-w-xl">
           <div>
-            <h1 className="text-5xl font-bold uppercase tracking-wide text-gray-400 mb-6">
+            <h1 className="text-5xl font-bold uppercase  text-gray-400 mb-6">
               Design et développement web
             </h1>
             <p className="text-xl text-gray-500 pt-12">
               Salut, je suis Basmah ALZENBAKE. Je conçois et développe des sites
-              web centrés sur l’utilisateur — des sites réactifs, élégants,
-              minimalistes et conçus avec intention.
+              web centrés sur l’utilisateur — des sites réactifs, minimalistes
+              et conçus avec intention.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ const LandingPage = () => {
             </a>
 
             <a
-              href="mailto:your@email.com"
+              href="mailto:b.alzenbake@gmail.com"
               className="flex items-center text-gray-500 text-lg border-b-2 border-transparent hover:border-gray-400 transition duration-200">
               Contactez-moi <FaArrowRight className="ml-2 text-gray-300" />
             </a>

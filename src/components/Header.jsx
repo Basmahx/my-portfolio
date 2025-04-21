@@ -11,12 +11,12 @@ const Header = () => (
         {/* Navigation List */}
         <ul className="flex gap-6 text-gray-700 text-sm font-medium">
           <li>
-            <a href="#projects" className="hover:opacity-80 transition-opacity">
+            <a href="/#projets" className="hover:opacity-80 transition-opacity">
               Projets
             </a>
           </li>
           <li>
-            <a href="About" className="hover:opacity-80 transition-opacity">
+            <a href="/About" className="hover:opacity-80 transition-opacity">
               À propos
             </a>
           </li>
