@@ -30,7 +30,7 @@ const ToolIcon = ({ tool }) => {
   return Icon ? (
     <div className="flex items-center space-x-2">
       <Icon className={`text-2xl ${color}`} />
-      <span className="text-sm text-gray-700">{tool.name}</span>
+      <span className="text-sm text-gray-500">{tool.name}</span>
     </div>
   ) : (
     <span className="text-sm text-gray-500">{tool.name}</span>
