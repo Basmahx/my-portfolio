@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import ToolIcon from "../components/ToolIcon";
 
 const ProjectCard = () => {
   const [projects, setProjects] = useState([]);
@@ -12,29 +13,54 @@ const ProjectCard = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col  items-center justify-center bg-white p-10 space-y-10">
+    <div className="min-h-screen flex flex-col items-center bg-white p-10 space-y-10">
       {projects.map((project) => (
-        <Link
+        <div
           key={project.id}
-          to={`/projects/${project.id}`}
-          className="bg-white rounded-2xl border border-gray-200 overflow-hidden w-full max-w-4xl cursor-pointer transform transition-transform hover:scale-105  mb-32">
-          <div className="p-10">
-            <p className="text-center pb-4 text-gray-400 text-sm sm:text-base font-bold uppercase tracking-wide">
-              {project.name}
-            </p>
-            <p className="text-center text-2xl  font-medium uppercase text-gray-800 mb-8">
-              {project.title || " "}
-            </p>
+          className="bg-white rounded-2xl border border-gray-200 overflow-hidden w-full max-w-4xl transform transition-transform mb-32">
+          <div className="flex justify-between items-center p-10">
+            {/* Text section */}
+            <div className="flex-1">
+              <p className="text-left pb-4 text-gray-400 text-sm sm:text-base font-bold uppercase tracking-wide">
+                {project.name}
+              </p>
+              <p className="text-left font-Nunito text-2xl font-medium uppercase text-gray-800 mb-8">
+                {project.title || " "}
+              </p>
+            </div>
+
+            {/* Tools and Button */}
+            <div className="flex flex-col items-end space-y-4 ml-10">
+              <div className="flex flex-wrap gap-2 max-w-sm justify-end">
+                {project.tools.map((tool, index) => (
+                  <span
+                    key={index}
+                    className="flex items-center space-x-2  bg-gray-100 text-gray-700 text-xs font-medium py-2 px-4 rounded-full">
+                    <ToolIcon tool={tool} />
+                  </span>
+                ))}
+              </div>
+              <div className="pt-8">
+                <Link
+                  to={`/projects/${project.id}`}
+                  className="bg-black text-white text-sm px-8 py-4 rounded-lg shadow transition">
+                  Voir plus
+                </Link>
+              </div>
+            </div>
           </div>
 
-          <div className="bg-gray-50 flex justify-center items-start h-[600px] p-6">
+          {/* Image Section (Clickable) */}
+          <Link
+            to={`/projects/${project.id}`}
+            className=" bg-gray-50 flex justify-center items-start h-[600px] p-6">
             <img
               src={project.image}
               alt={`${project.name} Preview`}
               className="max-h-full object-contain rounded-lg shadow-lg"
             />
-          </div>
-        </Link>
+          </Link>
+        </div>
       ))}
     </div>
   );

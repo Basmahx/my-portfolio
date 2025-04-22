@@ -26,7 +26,7 @@
     "tools": [
       { "name": "Html5", "icon": "FaHtml5" },
       { "name": "CSS", "icon": "FaCss3Alt" },
-      { "name": "JavaScript", "icon": "FaJsSquare" },
+      { "name": "SASS", "icon": "FaSass" },
       { "name": "Git", "icon": "FaGitAlt" },
       { "name": "Github", "icon": "FaGithub" }
     ],
@@ -84,8 +84,7 @@
       { "name": "Redux", "icon": "FaJsSquare" },
       { "name": "Git", "icon": "FaGitAlt" },
       { "name": "Github", "icon": "FaGithub" },
-      { "name": "Vite" },
-      { "name": "Green Code" }
+      { "name": "Vite" }
     ],
     "githubLink": [
       "https://github.com/Basmahx/ArgentBank-Frontend",

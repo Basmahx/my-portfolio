@@ -101,7 +101,7 @@ const ProjectPage = () => {
 
           <section className="space-y-6">
             <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
-              Ce que j'ai réalisé:
+              Ce que j'ai réalisé
             </h2>
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
               {project.work || "No work description available."}
@@ -112,9 +112,9 @@ const ProjectPage = () => {
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="sm:col-span-1 space-y-2">
                 <h3 className="text-lg font-semibold text-gray-800 border-l-4 pl-3 border-gray-300">
-                  Tools
+                  Technologies utilisées
                 </h3>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-4 pt-2">
                   <ul className="list-disc pl-5 space-y-2">
                     {/* Add ul element with appropriate styling */}
                     {project.tools.map((tool, index) => (
