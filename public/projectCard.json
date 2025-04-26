@@ -3,71 +3,30 @@
     "id": "ohmyfood",
     "name": "Ohmyfood",
     "title": "Restauration interactive innovante",
-    "image": "/assets/projects/ohmyfood.webp",
-    "tools": [
-      { "name": "Html5", "icon": "FaHtml5" },
-      { "name": "CSS", "icon": "FaCss3Alt" },
-      { "name": "SASS", "icon": "FaSass" },
-      { "name": "Git", "icon": "FaGitAlt" },
-      { "name": "Github", "icon": "FaGithub" }
-    ]
+    "image": "/assets/projects/ohmyfood.webp"
   },
   {
     "id": "sophiebluel",
     "name": "Sophie Bluel",
     "title": "Portfolio d’architecte d’intérieur",
-    "image": "/assets/projects/sophie.webp",
-    "tools": [
-      { "name": "Html5", "icon": "FaHtml5" },
-      { "name": "CSS", "icon": "FaCss3Alt" },
-      { "name": "JavaScript", "icon": "FaJsSquare" },
-      { "name": "Git", "icon": "FaGitAlt" },
-      { "name": "Github", "icon": "FaGithub" }
-    ]
+    "image": "/assets/projects/sophie.webp"
   },
   {
     "id": "ninacarducci",
     "name": "Ninacarducci",
     "title": "Portfolio photographe pro",
-    "image": "/assets/projects/ninacarducci.webp",
-    "tools": [
-      { "name": "Html5", "icon": "FaHtml5" },
-      { "name": "CSS", "icon": "FaCss3Alt" },
-      { "name": "JavaScript", "icon": "FaJsSquare" },
-      { "name": "Git", "icon": "FaGitAlt" },
-      { "name": "Github", "icon": "FaGithub" },
-      { "name": "Lighthouse" },
-      { "name": "Wave" }
-    ]
+    "image": "/assets/projects/ninacarducci.webp"
   },
   {
     "id": "kasa",
     "name": "Kasa",
     "title": "Leader location entre particuliers",
-    "image": "/assets/projects/kasa.webp",
-    "tools": [
-      { "name": "Html", "icon": "FaHtml5" },
-      { "name": "CSS", "icon": "FaCss3Alt" },
-      { "name": "React", "icon": "FaReact" },
-      { "name": "Node.js", "icon": "FaNodeJs" },
-      { "name": "Git", "icon": "FaGitAlt" },
-      { "name": "Github", "icon": "FaGithub" }
-    ]
+    "image": "/assets/projects/kasa.webp"
   },
   {
     "id": "argentBank",
     "name": "ArgentBank",
     "title": "Banque numérique",
-    "image": "/assets/projects/Argentbank.webp",
-    "tools": [
-      { "name": "Html5", "icon": "FaHtml5" },
-      { "name": "CSS", "icon": "FaCss3Alt" },
-      { "name": "React", "icon": "FaReact" },
-      { "name": "Redux", "icon": "FaJsSquare" },
-      { "name": "Git", "icon": "FaGitAlt" },
-      { "name": "Github", "icon": "FaGithub" },
-      { "name": "Vite" },
-      { "name": "Green Code" }
-    ]
+    "image": "/assets/projects/Argentbank.webp"
   }
 ]

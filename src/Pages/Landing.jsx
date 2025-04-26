@@ -9,10 +9,9 @@ const LandingPage = () => {
       <div className="rainbow-orb" />
 
       <section className="h-full flex items-center justify-center text-center relative z-10 px-4 sm:px-8">
-        {/* Outer container for content + absolutely positioned link */}
         <div className="relative max-w-xl">
           <div>
-            <h1 className="text-5xl font-bold uppercase  text-gray-400 mb-6">
+            <h1 className="text-6xl font-bold  bebas-neue-regular uppercase  text-gray-700 mb-2">
               Design et développement web
             </h1>
             <p className="text-xl text-gray-500 pt-12">
@@ -22,18 +21,19 @@ const LandingPage = () => {
             </p>
           </div>
 
-          {/* Contact Me link lowered further */}
           <div className="absolute -bottom-42 right-0 border-l-4 pl-3 border-gray-300 space-y-3">
             <a
               href="https://github.com/Basmahx"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-800 hover:text-blue-500 text-base flex items-center">
+              className="text-gray-800 hover:text-purple-400 text-base flex items-center"
+              aria-label="Visit Basmah's GitHub profile">
               <FontAwesomeIcon
                 icon={faGithub}
                 size="xl"
                 className="w-7 h-7 mr-2"
               />
+              <span className="sr-only">GitHub</span>
             </a>
 
             <a
