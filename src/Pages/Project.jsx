@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ToolIcon from "../components/ToolIcon"; // Import the icon map
+import ToolIcon from "../components/ToolIcon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -47,8 +47,8 @@ const ProjectPage = () => {
 
   if (!project || !project.name) {
     return (
-      <div className="min-h-screen flex justify-center items-center">
-        <p className="text-gray-700">Loading...</p>
+      <div className="min-h-screen flex justify-center items-center bg-white">
+        <div className="w-5 h-5 border-2 border-gray-200 border-t-gray-500 rounded-full animate-spin duration-[1000ms]"></div>
       </div>
     );
   }
@@ -70,29 +70,30 @@ const ProjectPage = () => {
       </div>
       <div className="px-4 sm:px-6 lg:px-16 pt-16 pb-16 space-y-12 max-w-6xl mx-auto">
         <div className="text-left space-y-4">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between ">
             <p className="text-gray-500 text-sm sm:text-base font-bold uppercase tracking-wide">
               {project.name}
             </p>
-
-            {/* Render GitHub links */}
-            {githubLinks.length > 0 ? (
-              githubLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-gray-700 hover:text-gray-900">
-                  <FontAwesomeIcon icon={faGithub} size="2x" />
-                </a>
-              ))
-            ) : (
-              <span>No GitHub link available.</span>
-            )}
+            <div className="flex-center">
+              {/* Render GitHub links */}
+              {githubLinks.length > 0 ? (
+                githubLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center  text-pink-900 hover:text-purple-500">
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
+                  </a>
+                ))
+              ) : (
+                <span>No GitHub link available.</span>
+              )}
+            </div>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl md:text-4xl uppercase pb-4 font-medium text-gray-800">
+          <h1 className="text-2xl bebas-neue-regular sm:text-3xl md:text-4xl uppercase pb-4 font-medium text-pink-900">
             {project.title || "title not available."}
           </h1>
           <p className="text-gray-700 text-base sm:text-lg pb-4 leading-relaxed">
@@ -100,7 +101,7 @@ const ProjectPage = () => {
           </p>
 
           <section className="space-y-6">
-            <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
+            <h2 className="text-2xl  bebas-neue-regular sm:text-2xl font-semibold text-pink-900">
               Ce que j'ai réalisé
             </h2>
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed">

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import ToolIcon from "../components/ToolIcon";
 
 const ProjectCard = () => {
   const [projects, setProjects] = useState([]);
@@ -24,23 +23,14 @@ const ProjectCard = () => {
               <p className="text-left pb-4 text-gray-400 text-sm sm:text-base font-bold uppercase tracking-wide">
                 {project.name}
               </p>
-              <p className="text-left font-Nunito text-2xl font-medium uppercase text-gray-800 mb-8">
+              <p className="text-left bebas-neue-regular text-4xl font-medium uppercase text-gray-600 mb-8">
                 {project.title || " "}
               </p>
             </div>
 
             {/* Tools and Button */}
             <div className="flex flex-col items-end space-y-4 ml-10">
-              <div className="flex flex-wrap gap-2 max-w-sm justify-end">
-                {project.tools.map((tool, index) => (
-                  <span
-                    key={index}
-                    className="flex items-center space-x-2  bg-gray-100 text-gray-700 text-xs font-medium py-2 px-4 rounded-full">
-                    <ToolIcon tool={tool} />
-                  </span>
-                ))}
-              </div>
-              <div className="pt-8">
+              <div>
                 <Link
                   to={`/projects/${project.id}`}
                   className="bg-black text-white text-sm px-8 py-4 rounded-lg shadow transition">

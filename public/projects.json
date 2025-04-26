@@ -46,8 +46,8 @@
       { "name": "JavaScript", "icon": "FaJsSquare" },
       { "name": "Git", "icon": "FaGitAlt" },
       { "name": "Github", "icon": "FaGithub" },
-      { "name": "Lighthouse" },
-      { "name": "Wave" }
+      { "name": "Lighthouse", "img": "/assets/lighthouselogo.svg" },
+      { "name": "Wave", "img": "/assets/wavelogo.svg" }
     ],
     "githubLink": "https://github.com/Basmahx/ninacarducci.github.io",
     "image": "/assets/projects/ninacarducci.webp"
@@ -81,11 +81,11 @@
       { "name": "Html5", "icon": "FaHtml5" },
       { "name": "CSS", "icon": "FaCss3Alt" },
       { "name": "React", "icon": "FaReact" },
-      { "name": "Redux", "icon": "FaJsSquare" },
+      { "name": "Redux", "img": "/assets/redux.svg" },
       { "name": "Git", "icon": "FaGitAlt" },
       { "name": "Github", "icon": "FaGithub" },
-      { "name": "Vite" },
-      { "name": "Green Code" }
+      { "name": "Vite", "img": "/assets/logoVite.svg" },
+      { "name": "Green Code", "img": "/assets/greencode.svg" }
     ],
     "githubLink": [
       "https://github.com/Basmahx/ArgentBank-Frontend",

@@ -22,18 +22,23 @@ export const iconMap = {
 };
 
 const ToolIcon = ({ tool }) => {
-  // Look up the tool in the iconMap using the "icon" key from JSON
-  const toolData = iconMap[tool.icon]; // tool.icon should match the keys like 'FaHtml5'
+  const toolData = iconMap[tool.icon];
   const Icon = toolData?.component;
   const color = toolData?.color || "text-gray-500";
 
-  return Icon ? (
+  return (
     <div className="flex items-center space-x-2">
-      <Icon className={`text-2xl ${color}`} />
+      {Icon ? (
+        <Icon className={`text-2xl ${color}`} />
+      ) : tool.img ? (
+        <img
+          src={tool.img}
+          alt={tool.name}
+          className="w-6 h-6 object-contain"
+        />
+      ) : null}
       <span className="text-sm text-gray-500">{tool.name}</span>
     </div>
-  ) : (
-    <span className="text-sm text-gray-500">{tool.name}</span>
   );
 };
 
