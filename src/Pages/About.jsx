@@ -42,14 +42,16 @@ const About = () => {
           {/* Journey Section */}
           <ToggleSection title="Mon Parcours">
             <p className="text-[rgb(97,97,97)]">
-              <span>Entrepreneuriat • Animation 3D • Design graphique </span>
+              <span className="inline-block pb-3 ">
+                Entrepreneuriat • Animation 3D • Design graphique{" "}
+              </span>
               <br />
               J'ai dirigé une boutique en ligne où mes designs étaient imprimés
               sur des produits physiques, dont certains sont devenus des
               best-sellers. Grâce à la combinaison de créativité, d'une solide
               compréhension du <strong>SEO</strong> et du marketing numérique,
               j'ai pu atteindre et engager efficacement des publics cibles dans
-              un marché compétitif. Ces compétences, en plus de ma formation en
+              un marché compétitif. Ces compétences, en plus de ma formation en{" "}
               <strong>développement web (Intégrateur Web – OPC)</strong>, me
               permettent d'aborder la conception et le développement web en me
               concentrant sur la création de solutions visuellement attractives
@@ -64,9 +66,10 @@ const About = () => {
           {/* Hobbies Section */}
           <ToggleSection title="Centres d'intérêt personnels">
             <p className="text-[rgb(97,97,97)]">
-              J'adore travailler sur des projets créatifs, que ce soit le
-              dessin, la conception ou la création d'animations. Je travaille
-              actuellement sur mon premier short film animé.
+              J'adore travailler sur des projets créatifs, qu'il s'agisse de
+              dessin, de conception ou d'animation. Je travaille actuellement
+              sur mon premier court métrage animé, qui sera disponible sur ma
+              chaîne YouTube dans quelques mois.
             </p>
           </ToggleSection>
 
@@ -102,7 +105,8 @@ const About = () => {
                   &#8226;
                 </span>
                 Développement web : HTML, CSS, TailwindCSS, SASS, JavaScript,
-                React, Redux, Node.js, Vite.
+                React, Redux, Node.js, Vite, SEO, ainsi que des pratiques de
+                Green Code.
               </li>
             </ul>
           </ToggleSection>
