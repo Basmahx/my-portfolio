@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="flex justify-between items-center py-4 px-8">
         {/* Left Section (Logo) */}
         <div className="flex items-center justify-center flex-1">
-          <a href="./" className="relative rounded-full opacity-90">
+          <a href="/" className="relative rounded-full opacity-90">
             <img
               src={logo}
               alt="Logo"
