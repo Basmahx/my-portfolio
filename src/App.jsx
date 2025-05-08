@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import ProjectPage from "./Pages/Project";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Error from "./Pages/Error";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects/:id" element={<ProjectPage />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </Router>
