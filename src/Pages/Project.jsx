@@ -57,11 +57,11 @@ const ProjectPage = () => {
   return (
     <div className="project-page pt-16 min-h-[80vh] flex-grow flex-col">
       {/* Top Section */}
-      <div className="w-full h-[60vh] sm:h-[70vh] bg-gray-50 flex items-center justify-center px-4">
+      <div className="w-full bg-gray-50 flex items-center justify-center px-4 py-10 sm:py-16">
         <img
           src={project.image}
           alt={project.name}
-          className="opacity-0 animate-[fadeIn_1s_ease-in_forwards] max-h-full max-w-full object-contain rounded-lg shadow-lg"
+          className="opacity-0 animate-[fadeIn_1s_ease-in_forwards] max-w-[90%] max-h-[400px] object-contain rounded-lg shadow-lg"
         />
       </div>
 
