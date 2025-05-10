@@ -39,7 +39,7 @@
     "title": "Portfolio photographe pro",
     "description": "Un site portfolio en ligne pour la photographe professionnelle Nina Carducci, cherchant à accroître sa visibilité et attirer de nouveaux clients.",
     "work": "Le site souffrait de lenteurs de chargement. J'ai analysé et optimisé le code afin d'améliorer ses performances, avec pour objectif d'accélérer le temps de chargement, d'améliorer la structure du code et d'optimiser le référencement. Cela a impliqué la minification des fichiers CSS et JavaScript, l'implémentation du chargement paresseux des images (lazy loading) et leur optimisation. Ces modifications ont permis de rendre l'interface plus fluide et agréable pour les utilisateurs. De plus, j'ai mis en place un référencement local en ajoutant des informations précises pour améliorer la visibilité du site sur les moteurs de recherche.",
-    "role": "",
+    "role": "Développeur front-end",
     "tools": [
       { "name": "Html5", "icon": "FaHtml5" },
       { "name": "CSS", "icon": "FaCss3Alt" },
